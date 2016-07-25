@@ -1,6 +1,6 @@
 source("packages.R")
 
-studentdata <- readRDS(file = "Data/studentdata.rds")
+studentdata <- readRDS(file = "STAT3120/Data/studentdata.rds")
 
 studentdata[1,]
 attach(studentdata)
