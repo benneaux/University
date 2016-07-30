@@ -2,13 +2,12 @@
 title: "MATH2320 Assignment 1"
 author: "Benjamin G. Moran, c3076448@uon.edu.au"
 date: "29 July 2016"
-output: pdf_document
+output: pdf_document 
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE) 
 ```
-
 **Due:** 5pm Tuesday 2nd August 2016.
 
 This is the first of the weekly assignments that you will receive this semester in MATH2320: Linear Algebra. In a typical week your assignment will consist of an introductory level question from the current week's lectures, which is preparation for your workshop, and some harder review questions from the previous week. For this first assignment, all questions are introductory level questions relating to the Monday lecture of the first week.
@@ -46,8 +45,8 @@ If you have any questions about this assignment, please see or email your lectur
     *Hint: if V is a vector space and U is a subset of V , then U is a subspace of V provided that:*
 
     * _U contains the additive identity $(0 \in U)$,_
-    * _U is closed under addition $(u, v \in U$ implies $u + v \in U)$,_
-    * _and U is closed under scalar multiplication $(a \in \mathbb{F}$ and $u \in U$ implies $au \in U)$._
+    * _U is closed under addition $(u, v \in U \implies u + v \in U)$,_
+    * _and U is closed under scalar multiplication $(a \in \mathbb{F}$ and $u \in U \implies au \in U)$._
     
     **Answer:** Let $x = 0$. Then we get: $$y = 3x = 3(0) = 0 \implies (0,0) \in T.$$ Therefore, the set *T* contains the additive identity.
 
