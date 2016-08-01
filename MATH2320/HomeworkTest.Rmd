@@ -24,7 +24,11 @@ If you have any questions about this assignment, please see or email your lectur
 1. Consider the set of polynomials of degree less than or equal to one, with real coefficients: $$P_1(x) := \{a + bx : a, b \in \mathbb{R}\}$$ This set is a vector space over $\mathbb{R}$, under standard addition of polynomials and standard multiplication of real numbers by polynomials. 
 *Prove that the vectors in $P_1(x)$ obey the commutative law of vector addition.*
 
-    **Answer:** Suppose we have two polynomials, $p(x)= \theta_1 + \gamma_1x$ and $q(x)=\theta_2 + \gamma_2x$, such that $$p(x), q(x) \in P_1(x): \theta_1, \theta_2, \gamma_1, \gamma_2 \in \mathbb{R},$$ then we get that: $$\begin{aligned} (p + q)(x) &= (\theta_1 + \gamma_1x) + (\theta_2 + \gamma_2x) \\ &= (\theta_1 + \theta_2) + (\gamma_1 + \gamma_2)(x) \\ &= (\theta_2 + \theta_1) + (\gamma_2 + \gamma_1)(x) \\ &= (\theta_2 + \gamma_2x) + (\theta_1 + \gamma_1x) \\ &= (q + p)(x) \end{aligned}$$ Therefore, the polynomials in $P_1(x)$ obey the commutative law of vector addition.
+    **Answer:** Suppose we have two polynomials, $p(x)= \theta_1 + \gamma_1x$ and $q(x)=\theta_2 + \gamma_2x$, such that 
+    $$p(x), q(x) \in P_1(x): \theta_1, \theta_2, \gamma_1, \gamma_2 \in \mathbb{R},$$
+    then we get that: 
+    $$\begin{aligned} (p + q)(x) &= (\theta_1 + \gamma_1x) + (\theta_2 + \gamma_2x) \\ &= (\theta_1 + \theta_2) + (\gamma_1 + \gamma_2)(x) \\ &= (\theta_2 + \theta_1) + (\gamma_2 + \gamma_1)(x) \\ &= (\theta_2 + \gamma_2x) + (\theta_1 + \gamma_1x) \\ &= (q + p)(x) \end{aligned}$$ 
+    Therefore, the polynomials in $P_1(x)$ obey the commutative law of vector addition.
 
 ***
 
@@ -34,7 +38,9 @@ If you have any questions about this assignment, please see or email your lectur
     
     *Hint: for any set to be made into a vector space, addition and scalar multiplication must be well-defined. Well-defined addition means that for any two vectors in the set, their sum must also be in the set. Well-defined scalar multiplication means that for any scalar in the field and vector in the set, their product must also be a vector in the set.*
     
-    **Answer:** Suppose we have two polynomials, $p(x)= 1 + \gamma_1x$ and $q(x)=1 + \gamma_2x$, such that $$p(x), q(x) \in S: \gamma_1, \gamma_2 \in \mathbb{R},$$ then, by the usual laws of vector addition we get that: $$\begin{aligned} (p + q)(x) &= (1 + \gamma_1x) + (1 + \gamma_2x) \\ &= (1 + 1) + (\gamma_1 + \gamma_2)(x) \\ &= 2 + (\gamma_1 + \gamma_2)(x)  \notin S \end{aligned}$$ Therefore, the set *S* is not closed under vector addition, which implies that it fails to be a vector space over $\mathbb{R}$. 
+    **Answer:** Suppose we have two polynomials, $p(x)= 1 + \gamma_1x$ and $q(x)=1 + \gamma_2x$, such that $$p(x), q(x) \in S: \gamma_1, \gamma_2 \in \mathbb{R},$$ then, by the usual laws of vector addition we get that: 
+    $$\begin{aligned} (p + q)(x) &= (1 + \gamma_1x) + (1 + \gamma_2x) \\ &= (1 + 1) + (\gamma_1 + \gamma_2)(x) \\ &= 2 + (\gamma_1 + \gamma_2)(x)  \notin S \end{aligned}$$
+    Therefore, the set *S* is not closed under vector addition, which implies that it fails to be a vector space over $\mathbb{R}$. 
 
 ***
 
@@ -49,6 +55,18 @@ If you have any questions about this assignment, please see or email your lectur
     * _and U is closed under scalar multiplication $(a \in \mathbb{F}$ and $u \in U \implies au \in U)$._
     
     **Answer:** Let $x = 0$. Then we get: $$y = 3x = 3(0) = 0 \implies (0,0) \in T.$$ Therefore, the set *T* contains the additive identity.
+    Next, let's define two vectors $u = (x_1, y_1)$ and $v = (x_2, y_2)$. Then, 
+    $$u,v \in T: x_i, y_i \in \mathbb{R}, i = 1,2$$ 
+    and 
+    $$\begin{aligned} x_1 &= y_1 = 3x_1 \\ x_2 &= y_2 = 3x_2 \end{aligned}$$
+    This gives us
+    $$y_1 + y_2 = 3x_1 + 3x_2 = 3(x_1 + x_2).$$ Therefore, we can define a vector $w = (x_3, y_3)$ such that: 
+    $$w \in T: x_3 = x_1 + x_2 \text{ and } y_3 = 3(x_1 + x_2).$$
+    Therefore *T* is closed under vector addition.
+    Lastly, considering $u = (x_1, y_1)$ again, we define another vector $v = (x_2, y_2)$ such that:
+    $$\forall \lambda \in \mathbb{R}, u,v \in T: v = \lambda u \implies x_2 = \lambda x_1 \text{ and } y_2 = \lambda y_1 = \lambda(3x_1) = 3(\lambda x_1)$$
+    Therefore, $T$ is closed under scalar multiplication and we have proved that $T$ is a subspace of $\mathbb{R}^2$.
+
 
 ***
 
